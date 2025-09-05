@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-a-rag
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

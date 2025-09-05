@@ -1,0 +1,25 @@
+# Start Kafka locally (Docker or local install)
+docker run -d --name zookeeper -p 2181:2181 zookeeper:3.8
+docker run -d --name kafka -p 9093:9092 --env ZOOKEEPER_CONNECT=zookeeper:2181 bitnami/kafka:3.7
+
+# Run Service A
+./gradlew bootRun
+
+
+=======DOCKER========
+docker stop <container_id_or_name>
+
+docker rm <container_id_or_name>
+
+./gradlew clean build
+./gradlew bootRun --debug-jvm
+
+brew services start kafka
+
+
+
+BASH:
+
+surajkhanpinjar@Surajkhans-MacBook-Air api % ls /Users/surajkhanpinjar/Java_Project/ai-support/api/
+Dockerfile              build                   docker-compose.yml      gradlew                 settings.gradle
+HELP.md                 build.gradle            gradle                  gradlew.bat             src

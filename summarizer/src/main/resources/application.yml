@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-a-summarizer
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

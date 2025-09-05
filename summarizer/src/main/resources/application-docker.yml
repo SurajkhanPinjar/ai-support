@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  kafka:
+    bootstrap-servers: kafka:9092   # 👈 Use the Kafka container hostname
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

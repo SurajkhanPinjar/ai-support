@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="api.main" options="-parameters" />
+      <module name="api.test" options="-parameters" />
+      <module name="rag" options="-parameters" />
+      <module name="rag.main" options="-parameters" />
+      <module name="rag.test" options="-parameters" />
+      <module name="summarizer" options="-parameters" />
+      <module name="summarizer.main" options="-parameters" />
+      <module name="summarizer.test" options="-parameters" />
+    </option>
+  </component>
+</project>
